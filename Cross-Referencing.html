@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+<title>Cross Referencing - title</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="title">
+<meta name="generator" content="makeinfo 4.8">
+<link title="Top" rel="start" href="index.html#Top">
+<link rel="up" href="Basics.html#Basics" title="Basics">
+<link rel="prev" href="Boxes-and-Minipages.html#Boxes-and-Minipages" title="Boxes and Minipages">
+<link rel="next" href="Multilingual-Support.html#Multilingual-Support" title="Multilingual Support">
+<link href="http://www.gnu.org/software/texinfo/" rel="generator-home" title="Texinfo Homepage">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+  pre.display { font-family:inherit }
+  pre.format  { font-family:inherit }
+  pre.smalldisplay { font-family:inherit; font-size:smaller }
+  pre.smallformat  { font-family:inherit; font-size:smaller }
+  pre.smallexample { font-size:smaller }
+  pre.smalllisp    { font-size:smaller }
+  span.sc    { font-variant:small-caps }
+  span.roman { font-family:serif; font-weight:normal; } 
+  span.sansserif { font-family:sans-serif; font-weight:normal; } 
+--></style>
+</head>
+<body>
+<div class="node">
+<p>
+<a name="Cross-Referencing"></a>
+Next:&nbsp;<a rel="next" accesskey="n" href="Multilingual-Support.html#Multilingual-Support">Multilingual Support</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="Boxes-and-Minipages.html#Boxes-and-Minipages">Boxes and Minipages</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="Basics.html#Basics">Basics</a>
+<hr>
+</div>
+
+<h3 class="section">3.5 Cross Referencing</h3>
+
+<p>Cross-referencing
+  <code>\label{&lt;unique&gt;}</code> should be placed at the point you want to label
+  <code>\ref{&lt;unique&gt;}</code> is then used to refer to the chapter/section number containing the label
+  <code>\pageref{&lt;unique&gt;}</code> is used to refer to the page containing the label
+
+   <p>Note: dont start a line with a number - use unbreakable space - Section~\ref{sec:results}
+
+   <p>You can use labels and refs within an enunmerate environment to refer to steps in the numbered list
+
+   <p>similar to TOC, the refs may be invoked before the labels
+  latex reads from the .aux file, needs two runs
+  undefined refs show up as ?? in output
+  if you get an 'undefined reference' warning on a re-run, then you have used a \ref to a \label that does not exist
+
+   <p>rare situations involving cross referencing and TOCs can require three runs
+  latexmk is a perl script that runs latex the required number of times
+
+   </body></html>
+

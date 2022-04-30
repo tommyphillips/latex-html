@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+<title>Internal Commands - title</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="title">
+<meta name="generator" content="makeinfo 4.8">
+<link title="Top" rel="start" href="index.html#Top">
+<link rel="up" href="Latex-Commands.html#Latex-Commands" title="Latex Commands">
+<link rel="prev" href="Character-Sequences.html#Character-Sequences" title="Character Sequences">
+<link rel="next" href="Short-and-Long-Commands.html#Short-and-Long-Commands" title="Short and Long Commands">
+<link href="http://www.gnu.org/software/texinfo/" rel="generator-home" title="Texinfo Homepage">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+  pre.display { font-family:inherit }
+  pre.format  { font-family:inherit }
+  pre.smalldisplay { font-family:inherit; font-size:smaller }
+  pre.smallformat  { font-family:inherit; font-size:smaller }
+  pre.smallexample { font-size:smaller }
+  pre.smalllisp    { font-size:smaller }
+  span.sc    { font-variant:small-caps }
+  span.roman { font-family:serif; font-weight:normal; } 
+  span.sansserif { font-family:sans-serif; font-weight:normal; } 
+--></style>
+</head>
+<body>
+<div class="node">
+<p>
+<a name="Internal-Commands"></a>
+Next:&nbsp;<a rel="next" accesskey="n" href="Short-and-Long-Commands.html#Short-and-Long-Commands">Short and Long Commands</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="Character-Sequences.html#Character-Sequences">Character Sequences</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="Latex-Commands.html#Latex-Commands">Latex Commands</a>
+<hr>
+</div>
+
+<h5 class="subsubsection">3.1.4.5 Internal Commands</h5>
+
+<p>Internal commands are like control words, with an <code>@</code> character in the name. 
+They are private to class files and packages.
+
+   <p><code>@</code> takes on special meaning when the file is invoked by <code>\documentclass</code> or <code>\usepackage</code>.<br>
+eg. <code>\c@section</code>, the internal representation of the section counter (in a class file or package),
+is the command <code>\c</code> that takes the character <code>@</code> as its argument, followed by <code>section</code>.
+
+   </body></html>
+

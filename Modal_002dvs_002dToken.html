@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+<title>Modal-vs-Token - title</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="title">
+<meta name="generator" content="makeinfo 4.8">
+<link title="Top" rel="start" href="index.html#Top">
+<link rel="up" href="Latex-Commands.html#Latex-Commands" title="Latex Commands">
+<link rel="next" href="Control-Words.html#Control-Words" title="Control Words">
+<link href="http://www.gnu.org/software/texinfo/" rel="generator-home" title="Texinfo Homepage">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+  pre.display { font-family:inherit }
+  pre.format  { font-family:inherit }
+  pre.smalldisplay { font-family:inherit; font-size:smaller }
+  pre.smallformat  { font-family:inherit; font-size:smaller }
+  pre.smallexample { font-size:smaller }
+  pre.smalllisp    { font-size:smaller }
+  span.sc    { font-variant:small-caps }
+  span.roman { font-family:serif; font-weight:normal; } 
+  span.sansserif { font-family:sans-serif; font-weight:normal; } 
+--></style>
+</head>
+<body>
+<div class="node">
+<p>
+<a name="Modal-vs-Token"></a>
+<a name="Modal_002dvs_002dToken"></a>
+Next:&nbsp;<a rel="next" accesskey="n" href="Control-Words.html#Control-Words">Control Words</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="Latex-Commands.html#Latex-Commands">Latex Commands</a>
+<hr>
+</div>
+
+<h5 class="subsubsection">3.1.4.1 Modal-vs-Token</h5>
+
+<p>Modal commands are effective for the remainder of their block. They can be localised with:
+     <ul>
+<li>Standard grouping - <code>{\itshape &lt;text&gt;}</code>
+<li>Environment grouping - <code>\begin{itshape}&lt;text&gt;\end{itshape}</code>
+</ul>
+
+   <p>Token commands operate on a set number of mandatory arguments/tokens following the command. 
+For example, token commands with a mandatory argument take the next token as their argument. 
+Usually, this token is a <code>{}</code> block.
+
+<h5 class="subsubheading">Note</h5>
+
+<p>Commands expecting no argument interpret <code>{}</code> as simply a block occuring after the command was made.<br>
+This can be used to create 'meaningful' whitespace after such a command. eg <code>\lambda{}</code>.
+
+   </body></html>
+

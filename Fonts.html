@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+<title>Fonts - title</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="title">
+<meta name="generator" content="makeinfo 4.8">
+<link title="Top" rel="start" href="index.html#Top">
+<link rel="up" href="Intermediate.html#Intermediate" title="Intermediate">
+<link rel="prev" href="Line-breaks.html#Line-breaks" title="Line breaks">
+<link href="http://www.gnu.org/software/texinfo/" rel="generator-home" title="Texinfo Homepage">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+  pre.display { font-family:inherit }
+  pre.format  { font-family:inherit }
+  pre.smalldisplay { font-family:inherit; font-size:smaller }
+  pre.smallformat  { font-family:inherit; font-size:smaller }
+  pre.smallexample { font-size:smaller }
+  pre.smalllisp    { font-size:smaller }
+  span.sc    { font-variant:small-caps }
+  span.roman { font-family:serif; font-weight:normal; } 
+  span.sansserif { font-family:sans-serif; font-weight:normal; } 
+--></style>
+</head>
+<body>
+<div class="node">
+<p>
+<a name="Fonts"></a>
+Previous:&nbsp;<a rel="previous" accesskey="p" href="Line-breaks.html#Line-breaks">Line breaks</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="Intermediate.html#Intermediate">Intermediate</a>
+<hr>
+</div>
+
+<h3 class="section">4.4 Fonts</h3>
+
+<p>Fonts
+
+   <p>Appearence determined by: family, shape, series/weight
+Computer Modern font families (Knuth) used in text mode: (sans-)serif, typewriter
+
+   <p>Changing font
+
+   <p>Modal commands:
+  \rmfamily \sffamily \ttfamily    \mdseries \bfseries    \upshape \itshape \slshape \scshape    \em      \normalfont
+Token commands:
+  \textrm   \textsf   \texttt      \textmd   \textbf      \textup  \textit  \textsl  \textsc     \emph    \textnormal
+  single mandatory argument
+    \textrm test   affects token t
+    \textrm {test} affects token {test}
+Modal commands expect an no argument
+
+   <p>Note:
+  \bf \md \it \sl \sc \sf \tt \rm are deprecated in favour of less troublesome alternatives
+
+   <p>\normalfont sets family, series and shape to default
+\em toggles between \upshape and \slshape
+
+   <p>font size
+  base font size for document is 11pt KOMA-Script default
+  then the following declarations (with no corresponding block commands) can set the relative font size
+    \tiny \scriptsize \footnotesize \small \normalsize \large \Large \LARGE \huge \HUGE
+  corresponding environments \begin{small}&lt;text&gt;\end{small} == {\small &lt;text&gt;}
+  font environments may be nested
+
+   <p>Changing default document fonts
+  documents have three fonts: rm, sf, tt
+  the default computer modern fonts are used
+  we can load packages to change them:
+    mathptmx changes rm
+    helvet changes sf
+    courier changes tt
+  the default font family is rm
+  Helvetica is larger than Times so if we use \usepackage{mathptmx} we should use \usepackage[scaled=0.9]{helvet}
+  For more fonts: The LATEX font catalogue. http://www.tug.dk/FontCatalogue/.
+
+</body></html>
+

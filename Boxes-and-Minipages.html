@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+<title>Boxes and Minipages - title</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="title">
+<meta name="generator" content="makeinfo 4.8">
+<link title="Top" rel="start" href="index.html#Top">
+<link rel="up" href="Basics.html#Basics" title="Basics">
+<link rel="prev" href="environments.html#environments" title="environments">
+<link rel="next" href="Cross-Referencing.html#Cross-Referencing" title="Cross Referencing">
+<link href="http://www.gnu.org/software/texinfo/" rel="generator-home" title="Texinfo Homepage">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+  pre.display { font-family:inherit }
+  pre.format  { font-family:inherit }
+  pre.smalldisplay { font-family:inherit; font-size:smaller }
+  pre.smallformat  { font-family:inherit; font-size:smaller }
+  pre.smallexample { font-size:smaller }
+  pre.smalllisp    { font-size:smaller }
+  span.sc    { font-variant:small-caps }
+  span.roman { font-family:serif; font-weight:normal; } 
+  span.sansserif { font-family:sans-serif; font-weight:normal; } 
+--></style>
+</head>
+<body>
+<div class="node">
+<p>
+<a name="Boxes-and-Minipages"></a>
+Next:&nbsp;<a rel="next" accesskey="n" href="Cross-Referencing.html#Cross-Referencing">Cross Referencing</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="environments.html#environments">environments</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="Basics.html#Basics">Basics</a>
+<hr>
+</div>
+
+<h3 class="section">3.4 Boxes and Minipages</h3>
+
+<p><code>tex</code> views a page as a box. 
+Boxes are built out of smaller boxes glued together.<br>
+
+   <p>* Boxes and line breaks
+
+   <p>a box may not contain a line break
+\mbox{&lt;text&gt;} makes a box containing &lt;text&gt;, and &lt;text&gt; will not be allowed to span a line break
+
+   <p>* Character boxes
+
+   <p>The smallest box is for a single character:
+<pre class="verbatim">
+   ____
+  |    |  height
+  |____|
+  |____|  depth
+  width
+</pre>
+
+   <p>Note: ligatures get a single character box
+
+   <p>* Horizontal boxes
+Horizontal boxes are boxes that can be placed inline with a line of text.
+
+   <p>* Tabular environment
+
+   <p>a tabular environment is a relatively complicated type of box
+  it may be categorised as a horizontal box
+  <code>\tabular[&lt;&lt;pos&gt;&gt;]{&lt;column specifiers&gt;}</code>
+  <code>&lt;&lt;pos&gt;&gt;</code> determines the vertical alignment (<code>t|c|b</code>) of the inline box
+
+   <p>* minipage environment
+  the minipage environemtn is another type of inline box
+  <code>\begin{minipage}[&lt;&lt;pos&gt;&gt;][&lt;&lt;height&gt;&gt;]{&lt;width&gt;}</code>
+  eg <code>\begin{minipage}[t]{0.4\linewidth}</code>
+  <code>\parbox[&lt;&lt;pos&gt;&gt;][&lt;&lt;height&gt;&gt;}{&lt;width&gt;}{&lt;text&gt;}</code> is a corresponding block-command, but as it is not an environment, it is more restricted than minipage (cannot do footnotes, list environments, etc)
+
+   <p>* framed boxes
+  Framed boxes
+    <code>\framebox[&lt;&lt;width&gt;&gt;][&lt;&lt;align-tcb&gt;&gt;]{&lt;text&gt;}</code>  treats &lt;text&gt; as a box of width &lt;width&gt; and puts a frame around it
+    <code>\fbox{&lt;text&gt;} ~ \framebox{&lt;text&gt;}</code>
+    <code>\usepackage{fancybox}</code>
+      <code>\shadowbox{&lt;text&gt;}</code>
+      <code>\doublebox{&lt;text&gt;}</code>
+      <code>\ovalbox{&lt;text&gt;}</code>
+      <code>\Ovalbox{&lt;text&gt;}</code>
+    advanced graphical frames, pgf, tikz
+
+   </body></html>
+

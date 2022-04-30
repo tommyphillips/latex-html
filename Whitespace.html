@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+<title>Whitespace - title</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="title">
+<meta name="generator" content="makeinfo 4.8">
+<link title="Top" rel="start" href="index.html#Top">
+<link rel="up" href="Interpretation-of-Source.html#Interpretation-of-Source" title="Interpretation of Source">
+<link rel="prev" href="Grouping.html#Grouping" title="Grouping">
+<link href="http://www.gnu.org/software/texinfo/" rel="generator-home" title="Texinfo Homepage">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+  pre.display { font-family:inherit }
+  pre.format  { font-family:inherit }
+  pre.smalldisplay { font-family:inherit; font-size:smaller }
+  pre.smallformat  { font-family:inherit; font-size:smaller }
+  pre.smallexample { font-size:smaller }
+  pre.smalllisp    { font-size:smaller }
+  span.sc    { font-variant:small-caps }
+  span.roman { font-family:serif; font-weight:normal; } 
+  span.sansserif { font-family:sans-serif; font-weight:normal; } 
+--></style>
+</head>
+<body>
+<div class="node">
+<p>
+<a name="Whitespace"></a>
+Previous:&nbsp;<a rel="previous" accesskey="p" href="Grouping.html#Grouping">Grouping</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="Interpretation-of-Source.html#Interpretation-of-Source">Interpretation of Source</a>
+<hr>
+</div>
+
+<h5 class="subsubsection">3.1.5.2 Whitespace</h5>
+
+<p>Anything from <code>%</code> up to and including <code>EOL</code> is ignored.<br>
+Multiple whitespace is treated as a single whitespace.<br>
+A line consisting of only whitespace is treated as a <code>\par</code>.<br>
+Whitespace at the beginning of a line is ignored.<br>
+
+   <p>Hence:
+<pre class="verbatim">
+  Foo%
+  Bar    
+</pre>
+Produces:
+
+   <p><code>FooBar</code>
+
+   </body></html>
+

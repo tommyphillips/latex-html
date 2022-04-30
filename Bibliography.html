@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+<title>Bibliography - title</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="title">
+<meta name="generator" content="makeinfo 4.8">
+<link title="Top" rel="start" href="index.html#Top">
+<link rel="up" href="Document-Structure.html#Document-Structure" title="Document Structure">
+<link rel="prev" href="Table-of-Contents.html#Table-of-Contents" title="Table of Contents">
+<link rel="next" href="Titlepage.html#Titlepage" title="Titlepage">
+<link href="http://www.gnu.org/software/texinfo/" rel="generator-home" title="Texinfo Homepage">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+  pre.display { font-family:inherit }
+  pre.format  { font-family:inherit }
+  pre.smalldisplay { font-family:inherit; font-size:smaller }
+  pre.smallformat  { font-family:inherit; font-size:smaller }
+  pre.smallexample { font-size:smaller }
+  pre.smalllisp    { font-size:smaller }
+  span.sc    { font-variant:small-caps }
+  span.roman { font-family:serif; font-weight:normal; } 
+  span.sansserif { font-family:sans-serif; font-weight:normal; } 
+--></style>
+</head>
+<body>
+<div class="node">
+<p>
+<a name="Bibliography"></a>
+Next:&nbsp;<a rel="next" accesskey="n" href="Titlepage.html#Titlepage">Titlepage</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="Table-of-Contents.html#Table-of-Contents">Table of Contents</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="Document-Structure.html#Document-Structure">Document Structure</a>
+<hr>
+</div>
+
+<h4 class="subsection">3.2.4 Bibliography</h4>
+
+<p>Bibliography
+  external tools such as bibtex and biber are used to automatically generate bibliography environments
+  their use is covered in the next book
+  for now, lets consider manually creating a bibliography environment
+
+<pre class="verbatim">
+  \begin{thebibliography}{&lt;widest tag>}
+  \bibitem[&lt;&lt;tag>>]{&lt;unique>}
+  \end{thebibliography}
+</pre>
+
+   <p>depending on the document class, either \bibname prints the word Bibliography or \refname prints the word References
+  thebibliography environment automatically invokes either \bibname or \refname to print the header, and then prints the bibitems
+
+   <p>most classes dont add bib to TOC
+  KOMA-Script option bibliography=totoc|totocnumbered
+
+   <p><code>\cite[&lt;&lt;text&gt;&gt;]{&lt;unique&gt;}</code> cites the reference
+
+   </body></html>
+

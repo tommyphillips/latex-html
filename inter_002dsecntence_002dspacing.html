@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+<title>inter-secntence-spacing - title</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="title">
+<meta name="generator" content="makeinfo 4.8">
+<link title="Top" rel="start" href="index.html#Top">
+<link rel="up" href="Details.html#Details" title="Details">
+<link rel="prev" href="accents.html#accents" title="accents">
+<link rel="next" href="special_002dcharacters.html#special_002dcharacters" title="special-characters">
+<link href="http://www.gnu.org/software/texinfo/" rel="generator-home" title="Texinfo Homepage">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+  pre.display { font-family:inherit }
+  pre.format  { font-family:inherit }
+  pre.smalldisplay { font-family:inherit; font-size:smaller }
+  pre.smallformat  { font-family:inherit; font-size:smaller }
+  pre.smallexample { font-size:smaller }
+  pre.smalllisp    { font-size:smaller }
+  span.sc    { font-variant:small-caps }
+  span.roman { font-family:serif; font-weight:normal; } 
+  span.sansserif { font-family:sans-serif; font-weight:normal; } 
+--></style>
+</head>
+<body>
+<div class="node">
+<p>
+<a name="inter-secntence-spacing"></a>
+<a name="inter_002dsecntence_002dspacing"></a>
+Next:&nbsp;<a rel="next" accesskey="n" href="special_002dcharacters.html#special_002dcharacters">special-characters</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="accents.html#accents">accents</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="Details.html#Details">Details</a>
+<hr>
+</div>
+
+<h4 class="subsection">4.1.2 inter-secntence-spacing</h4>
+
+<p>french spacing uses 1 standard space<br>
+english spacing uses 1 en-space (slightly larger than 1 standard space)<br>
+tex defaults to english, which is better<br>
+\frenchspacing \nonfrenchspacing  declare toggle french spacing<br>
+
+   <p>if we have a . ? or !, but it is not at the end of a sentence, then we must escape the en space<br>
+eg  e.g.\ like this<br>
+if a we have a capital letter followed by . ? or !, latex assumes it is not the end of the sentence, so we must escape it<br>
+eg Yesterday, I saw my G.P\@.<br>
+
+   <p>Note: in a typewriter font, \nonfrenchspacing uses a double-space to simulate the en space<br>
+
+   </body></html>
+

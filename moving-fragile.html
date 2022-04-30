@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+<title>moving fragile - title</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="title">
+<meta name="generator" content="makeinfo 4.8">
+<link title="Top" rel="start" href="index.html#Top">
+<link rel="up" href="Arguments.html#Arguments" title="Arguments">
+<link rel="prev" href="optional.html#optional" title="optional">
+<link href="http://www.gnu.org/software/texinfo/" rel="generator-home" title="Texinfo Homepage">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+  pre.display { font-family:inherit }
+  pre.format  { font-family:inherit }
+  pre.smalldisplay { font-family:inherit; font-size:smaller }
+  pre.smallformat  { font-family:inherit; font-size:smaller }
+  pre.smallexample { font-size:smaller }
+  pre.smalllisp    { font-size:smaller }
+  span.sc    { font-variant:small-caps }
+  span.roman { font-family:serif; font-weight:normal; } 
+  span.sansserif { font-family:sans-serif; font-weight:normal; } 
+--></style>
+</head>
+<body>
+<div class="node">
+<p>
+<a name="moving-fragile"></a>
+Previous:&nbsp;<a rel="previous" accesskey="p" href="optional.html#optional">optional</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="Arguments.html#Arguments">Arguments</a>
+<hr>
+</div>
+
+<h5 class="subsubheading">moving fragile</h5>
+
+<p>A moving argument is an argument whose contents are copied to multiple parts of the document.<br>
+For example, the arguments to <code>\section</code> are moving arguments:
+they appear in both the table of context and at the beginning of the section.<br>
+
+   <p>Commands are considered 'fragile' if they can mess things up when used inside a 'moving argument'.<br>
+For example, <code>\footnote</code> is a fragile command because when used within a moving argument it will cause an error.<br>
+
+   <p>In particular, <code>\section{Section 1\footnote{test}}</code> causes problems.<br>
+We can manually fix the error using <code>\section{Section 1\protect\footnote{test}}</code>.<br>
+
+   <p>A robust command is a command that is not fragile.<br>
+
+   </body></html>
+

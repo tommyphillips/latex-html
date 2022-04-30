@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+<title>Sectioning - title</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="title">
+<meta name="generator" content="makeinfo 4.8">
+<link title="Top" rel="start" href="index.html#Top">
+<link rel="up" href="Document-Structure.html#Document-Structure" title="Document Structure">
+<link rel="prev" href="Titlepage.html#Titlepage" title="Titlepage">
+<link href="http://www.gnu.org/software/texinfo/" rel="generator-home" title="Texinfo Homepage">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+  pre.display { font-family:inherit }
+  pre.format  { font-family:inherit }
+  pre.smalldisplay { font-family:inherit; font-size:smaller }
+  pre.smallformat  { font-family:inherit; font-size:smaller }
+  pre.smallexample { font-size:smaller }
+  pre.smalllisp    { font-size:smaller }
+  span.sc    { font-variant:small-caps }
+  span.roman { font-family:serif; font-weight:normal; } 
+  span.sansserif { font-family:sans-serif; font-weight:normal; } 
+--></style>
+</head>
+<body>
+<div class="node">
+<p>
+<a name="Sectioning"></a>
+Previous:&nbsp;<a rel="previous" accesskey="p" href="Titlepage.html#Titlepage">Titlepage</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="Document-Structure.html#Document-Structure">Document Structure</a>
+<hr>
+</div>
+
+<h4 class="subsection">3.2.6 Sectioning</h4>
+
+<p>Chapters, sections, etc.
+<pre class="verbatim">
+  \part[&lt;&lt;short title>>]{&lt;&lt;title>>}
+  \chapter[&lt;&lt;short title>>]{&lt;&lt;title>>}
+  \section[&lt;&lt;short title>>]{&lt;&lt;title>>}
+  \paragraph[&lt;&lt;short title>>]{&lt;&lt;title>>}
+  \subparagraph[&lt;&lt;short title>>]{&lt;&lt;title>>}
+</pre>
+
+   <p>the arguments to the above are moving arguments
+  the \parahraph commands are like unnumbered \subsubsubsections
+  the &lt;&lt;short title&gt;&gt; is used in the TOC and page header
+
+   <p>to facilitate consistent font styles for section headers, use <code>\addtokomafont{&lt;element&gt;}{&lt;commands&gt;}</code>
+  eg <code>\addtokomafont{section}{\rmfamily\bfseries}</code>
+
+   <p>KOMA-Script minisec
+  <code>\minisec{&lt;heading&gt;}</code> provides an unnumbered independent heading
+
+   </body></html>
+

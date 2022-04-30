@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+<title>Titlepage - title</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="title">
+<meta name="generator" content="makeinfo 4.8">
+<link title="Top" rel="start" href="index.html#Top">
+<link rel="up" href="Document-Structure.html#Document-Structure" title="Document Structure">
+<link rel="prev" href="Bibliography.html#Bibliography" title="Bibliography">
+<link rel="next" href="Sectioning.html#Sectioning" title="Sectioning">
+<link href="http://www.gnu.org/software/texinfo/" rel="generator-home" title="Texinfo Homepage">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+  pre.display { font-family:inherit }
+  pre.format  { font-family:inherit }
+  pre.smalldisplay { font-family:inherit; font-size:smaller }
+  pre.smallformat  { font-family:inherit; font-size:smaller }
+  pre.smallexample { font-size:smaller }
+  pre.smalllisp    { font-size:smaller }
+  span.sc    { font-variant:small-caps }
+  span.roman { font-family:serif; font-weight:normal; } 
+  span.sansserif { font-family:sans-serif; font-weight:normal; } 
+--></style>
+</head>
+<body>
+<div class="node">
+<p>
+<a name="Titlepage"></a>
+Next:&nbsp;<a rel="next" accesskey="n" href="Sectioning.html#Sectioning">Sectioning</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="Bibliography.html#Bibliography">Bibliography</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="Document-Structure.html#Document-Structure">Document Structure</a>
+<hr>
+</div>
+
+<h4 class="subsection">3.2.5 Titlepage</h4>
+
+<p>Titlepage requires at least the following info to be entered:
+  <code>\author{}</code>
+  <code>\title{}</code>
+  They can also facilitate more info:
+    <code>\date{}</code>     if not provided, current date used by default, use empty <code>\date{}</code> to suppress
+    KOMA-Script
+<pre class="verbatim">
+      \titlehead{}
+      \subject{}
+      \subtitle{}
+      \publishers{}
+</pre>
+  These commands do not print to the document, and hence may be placed in the preamble
+  Useful commands in this context:
+    <code>\and</code>    for specifying multiple authors
+    <code>\thanks{&lt;text&gt;}</code>   for a special footnote  <code>&lt;text&gt;</code> is a moving argument
+
+   </body></html>
+
